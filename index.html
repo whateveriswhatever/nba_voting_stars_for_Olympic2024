@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="description text-center">Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"> Age </label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Which option best describes your current role ?.</label>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="perferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you like to recommend NBA to a friend ?.</p>
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="definitely"
+              class="input-radio"
+              checked
+            />
+            Definitely
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="Maybe"
+              class="input-radio"
+            />
+            Maybe
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="Not sure"
+              class="input-radio"
+            />
+            Not sure
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see in Olympics 2024?
+            <span>(Check all that options)</span>
+          </p>
+          <label>
+            <input
+              name="prefer"
+              value="stephen-curry"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Chef Curry (Stephen Curry)
+          </label>
+
+          <label>
+            <input
+              name="prefer"
+              value="jayson-tatum"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Jayson Tatum
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="joel-embiid"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Joel Embiid
+          </label>
+
+          <label>
+            <input
+              name="prefer"
+              value="kd"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            KD (Kevin Durant)
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="lebron-james"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            King James (Lebron James)
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="kyrie-irving"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Kyrie Irving
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="devin-booker"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            DBook (Devin Booker)
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="kawhi-leonard"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Kawhi Leonard
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="athony-davids"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            AD (Athony Davids)
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="damian-lillard"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Dame (Damian Lillard)
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="khris-middleton"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Khris Middleton
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions ?.</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment, suggestions at here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            SUBMIT
+          </button>
+        </div>
+
+        <div class="form-group"></div>
+      </form>
+    </div>
+  </body>
+</html>
